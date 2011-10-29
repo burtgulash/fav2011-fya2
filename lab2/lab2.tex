@@ -85,7 +85,7 @@ $R_1$ & $U_c$ & $R_2$ & $U_c$ & $R_3$ & $U_c$ \\
 
 
 \section{Výpočty}
-Pomocí vzorce pro rezonanční frekvenci v elektrickém obvodu
+Pomocí vzorce pro rezonanční úhlovou frekvenci v elektrickém obvodu
 \begin{equation}
 w_{rez} = \sqrt{\frac{1}{LC} - \frac{R^2}{2L^2}}
 \end{equation}
@@ -99,21 +99,42 @@ b = \frac{R}{2L}
 \noindent
 vypočteme tyto hodnoty pro všechny tři odpory. Celkový odpor $R$ je součtem
 odporů všech součástek. \\
-$$ R = R_0 + R_i + R_L~~ pro~i \in \{1, 2, 3\}$$ \\
+\begin{equation}
+R = R_0 + R_i + R_L~~ pro~i \in \{1, 2, 3\}
+\end{equation}
 
-\begin{tabular}[b]{|l|c|c|}
+\noindent
+Obvod beze ztrát ($R = 0$) by měl rezonanční úhlovou frekvenci 
+\begin{equation}
+w_{rez} = \sqrt{\frac{1}{LC}}
+\end{equation}
+
+\noindent
+Výsledné frekvence pak z úhlových určíme ze vztahu
+\begin{equation}
+f_{rez} = \frac{w_{rez}}{2 \pi}
+\end{equation}
+
+
+\begin{tabular}[b]{|l|c|c|c|c|}
 \hline
-& konstanta útlumu & rezonanční frekvence \\
+& celkový odpor [$k \Omega$] & konstanta útlumu & rezonanční frekvence [Hz] & 
+                   $f_{max}$ [Hz] \\
 \hline
-$R_1$ & & \\
-$R_2$ & & \\
-$R_3$ & & \\
+$R_1$ & 11.33 & 1281.7 & 592.38 & 572 \\
+$R_2$ & 6.95  & 786.2  & 634.70 & 618 \\
+$R_3$ & 3.47  & 392.5  & 652.95 & 652 \\
+$beze~ztr\acute{a}t$  & 0 & 0 & 658.90 & - \\
 \hline
 \end{tabular}
 
 \vspace{1cm}
 
 \includegraphics[width=10cm,angle=270]{graf.eps}
-\section{Závěr}
+
+\section{Závěr} 
+Naměřené hodnoty odpovídají vypočítaným. Pro vyšší přesnost by
+bylo možné snížit interval mezi po sobě následujícími frekvencemi při měření,
+ale z časových důvodů to nebylo možné.
 
 \end{document}
