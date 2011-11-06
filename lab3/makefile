@@ -1,5 +1,5 @@
 latexfile = lab3
-figures   = 
+figures   = graf1.eps graf2.eps
 helpfiles = labtitle.tex makefile charakteristiky.csv intenzita.csv
 
 
