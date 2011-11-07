@@ -81,7 +81,7 @@ Závislost napětí a proudu nakrátko na intenzitě ozáření \\
 \noindent
 Maximální hodnota napětí naprázdno je $U_{0max} = 2.10$~[V]. \\
 Konstanta $C$ ze vztahu $I_f = CE$ je určena pomocí lineární regrese a vychází
-$C = 0.1156$.
+$C = 0.117$.
 
 \subsection{Voltampérmetrové charakteristiky}
 \begin{center}
@@ -92,11 +92,23 @@ $C = 0.1156$.
 Účinnost solární baterie zjistíme jako poměr maximálního výstupního výkonu 
 a~dopadajícího výkonu na čtyři články, každý s rozměry 2.5~cm $\times$ 5~cm.
 
-Celková plocha baterie je $S = 0.005~m^2$. Dopadající výkon pro $E =
-801~Wm^{-2}$ pak bude $P = ES$, tedy $P = 4.005~W$. Maximální výstupní výkon 
-pro stejnou intenzitu je $P = 138.116~mW$.
+Dopadající výkon bude $P_{dop} = ES$, kde celková plocha baterie je $S =
+0.005~m^2$. Maximální výstupní výkon zjistíme jako $P_{v\acute{y}s} = UI$.
 
-Účinnost je tedy $\eta = 0.035$, tzn. 3.5~\%.
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+E~[Wm$^{-2}$] & P$_{dop}$~[W] & P$_{v\acute{y}s}$~[mW] & Účinnost \\
+\hline
+801 & 4.01 & 138.12 & 3.4~\% \\
+539 & 2.70 & 98.90  & 3.6~\% \\
+444 & 2.22 & 76.14  & 3.4~\% \\
+\hline
+\end{tabular}
+\end{center}
 
 \section{Závěr} 
+Vztah mezi proudem nakrátko a intenzitou ozáření vyšel $C = 0.117$.
+Účínnost solární baterie vychází průměrně 3.5~\%.
+
 \end{document}
