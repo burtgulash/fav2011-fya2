@@ -13,7 +13,7 @@ abline(lm(E ~ data$a), col="gray", lty=2, lwd=2)
 
 title(main=expression("Závislost intenzity ozáření na vzdálenosti"), 
                                                       cex.main=1.5)
-title(xlab="a [cm]", cex.lab=1.5)
+title(xlab="a [cm]", cex.lab=1)
 title(ylab=expression("E [Wm"^-2~"]"), cex.lab=1) 
 
 dev.off()
