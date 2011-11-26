@@ -73,6 +73,7 @@ Rozlišovací doba Geiger-M\"ullerova počítače:
 \hline
 vzorek & počet impulsů za 200s & četnost [imp/min] \\
 \hline
+bez zářiče & 302 & 90.6 \\
 1      & 9288  & 2786.4 \\
 2      & 8865  & 2659.5 \\
 1 a 2  & 17670 & 5301.0 \\
@@ -82,9 +83,34 @@ vzorek & počet impulsů za 200s & četnost [imp/min] \\
 
 
 \section{Výpočty}
+\subsection{Charakteristika}
+Sklon plata zjistíme jako přírustek četnosti impulzů na úseku 100 V.  Pomocí
+lineární regrese pro body nacházející se v platu vychází sklon 1.42 \%/100V.
+
 \begin{center}
 \includegraphics[width=10cm,angle=270]{charakteristika.eps}
 \end{center}
+
+\subsection{Rozlišovací doba}
+Pracovní napětí bylo zvoleno přibližně v polovině plata, tj. U$_P$ = 520 V.
+Rozlišovací dobu zjistíme ze vztahu
+$$
+t_R = t \left[1 + \frac{t}{2} (R_{012} - R_0) \right],~~
+kde~t = \frac{R_{01} + R_{02} - R_{012} - R_0}{2(R_{01} - R_0)(R_{02} - R_0)}
+$$ \\
+Hodnoty R jsou počty registrovaných impulzů za sekundu pro daný zářič.
+
+Pro ztrátu impulzů při měření impulzů obou zářičů použijeme vztah
+$$ D = \frac{R}{1 - Rt_R} $$
+
+\subsection{Účinnost}
+Účinnost G-M počítače je pro daný zářič
+$$f = \frac{R}{A(a_1 + a_2 + \ldots + a_n)g} \cdot 100~[\%]$$
+g je geometrický faktor, pro zvolenou vzdálenost mezi zářičem a počítačem 50~mm
+odpovídá 0.082103.
+
+t$_R$ vychází~237.6~$\mu s$ a ztráta impulzů při měření obou zářičů vychází
+90.24~imp/s. Účinnost je %TODO \%.
 
 \section{Závěr} 
 
