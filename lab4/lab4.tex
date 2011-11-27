@@ -1,4 +1,4 @@
-\documentclass[10pt]{article}
+\documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[czech]{babel}
 \usepackage{a4wide}
@@ -101,17 +101,23 @@ $$ \\
 Hodnoty R jsou počty registrovaných impulzů za sekundu pro daný zářič.
 
 Pro ztrátu impulzů při měření impulzů obou zářičů použijeme vztah
-$$ D = \frac{R}{1 - Rt_R} $$
+$$ ztr\acute{a}ta = D - R = \frac{R}{1 - Rt_R} - R$$
 
+\clearpage
 \subsection{Účinnost}
 Účinnost G-M počítače je pro daný zářič
 $$f = \frac{R}{A(a_1 + a_2 + \ldots + a_n)g} \cdot 100~[\%]$$
 g je geometrický faktor, pro zvolenou vzdálenost mezi zářičem a počítačem 50~mm
-odpovídá 0.082103.
+odpovídá 0.082103. a$_i$ jsou počty kvant gama dané enegie vzniklých při jednom
+rozpadu, pro typ použitého zářiče je jejich součet roven 2. A je aktivita
+zářiče ke dni měření.
 
-t$_R$ vychází~237.6~$\mu s$ a ztráta impulzů při měření obou zářičů vychází
-90.24~imp/s. Účinnost je %TODO \%.
+{\bf t$\mathbf{_R}$} vychází~{\bf 237.6~$\mathbf{\mu s}$}, ztráta impulzů při
+měření obou zářičů {\bf 1.89~imp/s}.  Účinnost je~{\bf 0.6\,\%}.
 
 \section{Závěr} 
+Ztráta impulzů při měření obou zářičů byla 2\,\%, metoda dvou zářičů byla v
+tomto případě použita správně, protože ztráta nepřevyšuje 10\,\%.  Účinnost G-M
+počítače vyšla 0.6\,\%, což odpovídá pro měření záření gama.
 
 \end{document}
