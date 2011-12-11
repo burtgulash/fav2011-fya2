@@ -19,6 +19,9 @@
 exponovaný rentgenový snímek, zařízení pro odečítání reflexí ze snímku
 
 \section{Naměřené hodnoty}
+Naměřené reflexní úhly $2\theta$, mezirovinné vzdálenosti $d$, Millerovy indexy
+(h, k, l) a mřížková konstanta $a$: \\
+
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|c|}
 \hline
@@ -40,48 +43,35 @@ $2\theta$ & $\theta$ & $\sin\theta$ & d [\AA] & h k l & a [\AA] \\
 \hline
 \end{tabular}
 \end{center}
+
+Vlnová délka použitého RTG záření je $\lambda$ = 1.79021 \AA. Při vzniku
+rentgenového snímku byl použit filtr, proto není nutné vyloučit reflexe od
+záření $K_\beta$.
 \section{Výpočty}
+Mezirovinné vzdálenosti zjistíme z naměřených reflexních úhlů $2\theta$
+pomocí Braggovy rovnice:
+$$d = \frac{\lambda}{2 \sin \theta}$$ \\
+
+Z Hull-Davyeho křivek se poté určí Millerovy indexy.  Protože víme, že vzorek
+je NaCl, který krystalizuje v kubické soustavě, mřížkovou konstantu získáme ze
+vzorce:
+$$a = d \sqrt{h^2 + k^2 + l^2}$$ \\
+kde trojice (h, k, l) jsou Millerovy indexy příslušející mezirovinné
+vzdálenosti d.
+
+Millerovy indexy poslední reflexe určíme ze vztahu
+$$h^2 + k^2 + l^2 \le \frac{4 a^2}{\lambda^2}$$\\
+kde pravá strana je zaokrouhlená na nejbližší nižší celé číslo, které
+vyhovuje levé straně rovnice pro celá čísla.
+
+Millerovy indexy a jednotlivě vypočtené mřížkové konstanty jsou uvedeny
+v~tabulce. Výsledná mřížková konstanta je aritmetický průměr vypočtených,
+odpovídá $\bar{a} = 5.80 \pm 0.09$. Poslední reflexe odpovídá Millerovým indexům
+(6, 2, 1) a (4, 4, 3).
 \section{Závěr} 
+Měření bylo bohužel nepřesné. Pravděpodobně se stala chyba při určování středů
+vstupního a výstupního otvoru. Při výpočtu byla zřejmě vynechána některá
+reflexe, proto aritmetický průměr šesti reflexí neurčil správný střed otvoru.
+U krystalu NaCl reflektují pouze roviny, které mají Millerovy indexy pouze liché nebo pouze sudé. Vypočítané indexy nejvyšší možné reflexe jsou proto chybné, protože tohle nesplňují.
+
 \end{document}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
